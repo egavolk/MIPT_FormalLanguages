@@ -103,7 +103,7 @@ def dfs(g, used, v, symbol):
 
 
 def find_max_prefix_len(nfa, u):
-    current_stages = [{ self.start }, set()]
+    current_stages = [{ nfa.start }, set()]
     ans = 0
     for symbol in u:
         used = [False] * len(nfa.g)
